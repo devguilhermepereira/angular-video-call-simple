@@ -1,2 +1,3 @@
-# angular-videochamada-simple
-Project of videochamada with Angular and using Twilio
+# Simple video call with Angular
+
+For the server we use the Twilio service
