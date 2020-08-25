@@ -8,6 +8,8 @@ import {AppRoutingModule} from './app-routing.module';
 import {LayoutsModule} from './layouts/layouts.module';
 import {VideoCallModule} from './pages/video-call/video-call.module';
 import {DashboardModule} from './pages/dashboard/dashboard.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import {DashboardModule} from './pages/dashboard/dashboard.module';
     AppRoutingModule,
     LayoutsModule,
     VideoCallModule,
-    DashboardModule
+    DashboardModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

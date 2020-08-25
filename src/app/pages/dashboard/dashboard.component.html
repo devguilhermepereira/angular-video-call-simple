@@ -1,1 +1,32 @@
-<p>dashboard works!</p>
+<mat-toolbar><span>Videochamada com Twilio</span></mat-toolbar>
+<div class="container">
+  <div fxLayout="row" fxLayoutAlign="center start">
+    <div fxFlex="100" fxLayoutAlign="center center">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>Criar Sala</mat-card-title>
+          <mat-card-subtitle>preencha os campos abaixo</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <div fxLayout="column" fxLayoutAlign="space-around center">
+            <div fxFlex="100" fxLayoutAlign="center center">
+              <mat-form-field class="example-form-field">
+                <mat-label>Nome da Sala</mat-label>
+                <input matInput type="text" [(ngModel)]="roomConnect.name">
+              </mat-form-field>
+            </div>
+            <div fxFlex="100" fxLayoutAlign="center center">
+              <mat-form-field class="example-form-field">
+                <mat-label>Nome do Participante</mat-label>
+                <input matInput type="text" [(ngModel)]="roomConnect.participant">
+              </mat-form-field>
+            </div>
+          </div>
+        </mat-card-content>
+        <mat-card-actions fxLayoutAlign="end">
+          <button mat-raised-button color="primary" (click)="createRoom()">Criar</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>
