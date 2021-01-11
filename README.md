@@ -2,7 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.6.
 
-For the server we use the Twilio service
+## Twilio Service
+
+The [Twilio](https://www.twilio.com/) service is used for hosting;
 
 ## Development server
 
